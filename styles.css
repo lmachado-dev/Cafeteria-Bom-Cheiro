@@ -89,7 +89,6 @@ section {
 
 .home-container {
     background: url("./src/assets/home-img.jpg");
-
     background-position: center;
     background-size: cover;
 }
@@ -251,4 +250,59 @@ section {
 
 .footer .share img:hover{
     background: var(--main-color);
+}
+
+@media (max-width:768px){
+
+    .header section .logo img{
+        max-width: 100%;
+        height: auto;
+    }
+
+    .header section .navbar{
+        text-align: center;
+    }
+
+    .header section .navbar a {
+        font-size: 2rem;
+        padding: 1rem;
+    }
+
+    .header section .icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .header section .icons img {
+        max-width: 40%;
+        height: auto;
+    }
+
+    .home-container {
+
+        background-repeat: no-repeat;
+    }
+
+    .home-container section .content h3{
+        line-height: 1;
+        font-size: 4rem;
+    }
+
+    .home-container section .content p{
+        font-size: 1.3rem;
+    }
+
+    .about .title {
+        font-size: 3rem
+    }
+
+    .about .row {
+        flex-direction: column;
+    }
+
+    .about .row .container-imagem img{
+        display: inline;
+        max-width: 100%;
+        height: auto;
+    }
 }
